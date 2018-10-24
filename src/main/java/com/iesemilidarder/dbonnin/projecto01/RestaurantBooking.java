@@ -1,25 +1,25 @@
 package com.iesemilidarder.dbonnin.projecto01;
+import com.iesemilidarder.dbonnin.projecto01.Controller.RestaurantController;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class RestaurantBooking extends Product {
 
         public static void main(String... args) {
-            ArrayList<RestaurantBooking> restaurantBookingArrayList = new ArrayList<>();
-            RestaurantBooking restaurantBooking = new RestaurantBooking();
-            restaurantBooking.setResPais("España");
-            restaurantBooking.setResName("100 Montaditos");
-            restaurantBooking.setResPrice(5.0);
-            restaurantBooking.setResEstrellas(1);
+            ArrayList<RestaurantController> restaurantControllerArrayList = new ArrayList<>();
+            RestaurantController restaurantController = new RestaurantController();
+            restaurantController.setResPais("España");
+            restaurantController.setResName("100 Montaditos");
+            restaurantController.setResPrice(5.0);
+            restaurantController.setResEstrellas(1);
 
-            RestaurantBooking restaurantBooking1 = new RestaurantBooking();
-            restaurantBooking1.setResPais("España");
-            restaurantBooking1.setResName("Skalop");
-            restaurantBooking1.setResPrice(7.5);
-            restaurantBooking1.setResEstrellas(2);
+            RestaurantController restaurantController1 = new RestaurantController();
+            restaurantController1.setResPais("España");
+            restaurantController1.setResName("Skalop");
+            restaurantController1.setResPrice(7.5);
+            restaurantController1.setResEstrellas(2);
 
-            RestaurantBooking restaurantBooking2 = new RestaurantBooking();
+            RestaurantController restaurantBooking2 = new RestaurantBooking();
             restaurantBooking2.setResPais("Francia");
             restaurantBooking2.setResName("Creperie la Chaumiere");
             restaurantBooking2.setResPrice(11.2);
@@ -28,6 +28,6 @@ public class RestaurantBooking extends Product {
             restaurantBookingArrayList.add(restaurantBooking);
             restaurantBookingArrayList.add(restaurantBooking1);
             restaurantBookingArrayList.add(restaurantBooking2);
-        }
-    }
+ }
 }
+

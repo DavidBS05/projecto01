@@ -4,9 +4,11 @@ public abstract class Product {
     private String geographicalPoint;
     private String company;
     private String activityKind;
+
     private String resPais;
     private String resName;
     private Double resPrice;
+    private Integer resEstrellas;
 
     public String getGeographicalPoint() { return geographicalPoint; }
     public void setGeographicalPoint(String geographicalPoint) {
@@ -31,4 +33,7 @@ public abstract class Product {
 
     public Double getResPrice() { return resPrice; }
     public void setResPrice(Double resPrice) { this.resPrice = resPrice; }
+
+    public Integer getResEstrellas() { return resEstrellas; }
+    public void setResEstrellas(Integer resEstrellas) { this.resEstrellas = resEstrellas; }
 }

@@ -6,7 +6,7 @@ public abstract class Product {
     private String activityKind;
     private String resPais;
     private String resName;
-    private Integer resPrice;
+    private Double resPrice;
 
     public String getGeographicalPoint() { return geographicalPoint; }
     public void setGeographicalPoint(String geographicalPoint) {
@@ -29,6 +29,6 @@ public abstract class Product {
     public String getResName() { return resName; }
     public void setResName(String resName) { this.resName = resName; }
 
-    public Integer getResPrice() { return resPrice; }
-    public void setResPrice(Integer resPrice) { this.resPrice = resPrice; }
+    public Double getResPrice() { return resPrice; }
+    public void setResPrice(Double resPrice) { this.resPrice = resPrice; }
 }

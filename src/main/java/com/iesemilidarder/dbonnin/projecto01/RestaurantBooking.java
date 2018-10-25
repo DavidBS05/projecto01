@@ -6,28 +6,32 @@ import java.util.ArrayList;
 public class RestaurantBooking extends Product {
 
         public static void main(String... args) {
+            System.out.println("Funciona");
+
             ArrayList<RestaurantController> restaurantControllerArrayList = new ArrayList<>();
             RestaurantController restaurantController = new RestaurantController();
-            restaurantController.setResPais("España");
-            restaurantController.setResName("100 Montaditos");
-            restaurantController.setResPrice(5.0);
-            restaurantController.setResEstrellas(1);
+            restaurantController.setCountry("España");
+            restaurantController.setName("100 Montaditos");
+            restaurantController.setPrice(5.0);
+            restaurantController.setStars(1);
 
             RestaurantController restaurantController1 = new RestaurantController();
-            restaurantController1.setResPais("España");
-            restaurantController1.setResName("Skalop");
-            restaurantController1.setResPrice(7.5);
-            restaurantController1.setResEstrellas(2);
+            restaurantController1.setCountry("España");
+            restaurantController1.setName("Skalop");
+            restaurantController1.setPrice(7.5);
+            restaurantController1.setStars(2);
 
-            RestaurantController restaurantBooking2 = new RestaurantBooking();
-            restaurantBooking2.setResPais("Francia");
-            restaurantBooking2.setResName("Creperie la Chaumiere");
-            restaurantBooking2.setResPrice(11.2);
-            restaurantBooking2.setResEstrellas(4);
+            RestaurantController restaurantBooking2 = new RestaurantController();
+            restaurantBooking2.setCountry("Francia");
+            restaurantBooking2.setName("Creperie la Chaumiere");
+            restaurantBooking2.setPrice(11.2);
+            restaurantBooking2.setStars(4);
 
-            restaurantBookingArrayList.add(restaurantBooking);
-            restaurantBookingArrayList.add(restaurantBooking1);
-            restaurantBookingArrayList.add(restaurantBooking2);
- }
+            restaurantControllerArrayList.add(restaurantController);
+            restaurantControllerArrayList.add(restaurantController1);
+            restaurantControllerArrayList.add(restaurantBooking2);
+
+            System.out.println("Fin");
+        }
 }
 

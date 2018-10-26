@@ -30,10 +30,6 @@ public class RestaurantBooking extends Product {
             restaurantControllerArrayList.add(restaurantController1);
             restaurantControllerArrayList.add(restaurantController2);
 
-            for (int x=0;x<restaurantControllerArrayList.size();x++) {
-                System.out.println(restaurantControllerArrayList.get(x));
-            }
-
             System.out.println("Fin");
         }
 }

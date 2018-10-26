@@ -1,13 +1,7 @@
 package com.iesemilidarder.dbonnin.projecto01;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Place extends Product {
-    private List <Place> initPlace() {
-        List<Place> placeList = new ArrayList<Place>();
-        Place place = new Place();
+    public static void main(String... args) {
 
-        return placeList;
     }
 }

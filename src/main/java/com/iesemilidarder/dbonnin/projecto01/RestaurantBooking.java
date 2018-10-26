@@ -4,7 +4,6 @@ import com.iesemilidarder.dbonnin.projecto01.Controller.RestaurantController;
 import java.util.ArrayList;
 
 public class RestaurantBooking extends Product {
-
         public static void main(String... args) {
             System.out.println("Funciona");
 
@@ -21,15 +20,19 @@ public class RestaurantBooking extends Product {
             restaurantController1.setPrice(7.5);
             restaurantController1.setStars(2);
 
-            RestaurantController restaurantBooking2 = new RestaurantController();
-            restaurantBooking2.setCountry("Francia");
-            restaurantBooking2.setName("Creperie la Chaumiere");
-            restaurantBooking2.setPrice(11.2);
-            restaurantBooking2.setStars(4);
+            RestaurantController restaurantController2 = new RestaurantController();
+            restaurantController2.setCountry("Francia");
+            restaurantController2.setName("Creperie la Chaumiere");
+            restaurantController2.setPrice(11.2);
+            restaurantController2.setStars(4);
 
             restaurantControllerArrayList.add(restaurantController);
             restaurantControllerArrayList.add(restaurantController1);
-            restaurantControllerArrayList.add(restaurantBooking2);
+            restaurantControllerArrayList.add(restaurantController2);
+
+            for (int x=0;x<restaurantControllerArrayList.size();x++) {
+                System.out.println(restaurantControllerArrayList.get(x));
+            }
 
             System.out.println("Fin");
         }

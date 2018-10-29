@@ -1,20 +1,41 @@
 package com.iesemilidarder.dbonnin.projecto01.Controller;
 
+import com.iesemilidarder.dbonnin.projecto01.RestaurantBooking;
+import org.apache.commons.collections4.IteratorUtils;
+
+import java.util.ArrayList;
+
 public class RestaurantController {
-    private String country;
-    private String name;
-    private Double price;
-    private Integer stars;
+    public static void main(String... args) {
+        System.out.println("Funciona");
 
-    public String getCountry() { return country; }
-    public void setCountry(String country) { this.country = country; }
+        ArrayList<RestaurantBooking> restaurants = new ArrayList<>();
 
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
+        for (int i=0;i<40;i++) {
+            RestaurantBooking restaurantController = new RestaurantBooking();
+            restaurantController.setCountry("pais"+i);
+            restaurantController.setName("nombre"+i);
+            restaurantController.setPrice(5.0+i);
+            restaurantController.setStars(1+i);
+            restaurants.add(restaurantController);
+        }
+        /*
+        for (Iterator<RestaurantBooking> it = restaurants.iterator(); it.hasNext(); ) {
+            RestaurantBooking i = it.next();
+        }*/
+        for (RestaurantBooking i:restaurants){
 
-    public Double getPrice() { return price; }
-    public void setPrice(Double price) { this.price = price; }
+        }
+        IteratorUtils.forEach(restaurants.iterator(), input -> {
+            System.out.println(input.getName());
+            try{
+                //ejecuta insert into places (name,description) values (input.getName(),input.getDescription()
+                //commit
+            }catch (Exception e){
+                //rollback
+            }
 
-    public Integer getStars() { return stars; }
-    public void setStars(Integer stars) { this.stars = stars; }
+        });
+        System.out.println("Fin");
+    }
 }

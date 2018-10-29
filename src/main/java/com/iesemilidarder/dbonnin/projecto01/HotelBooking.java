@@ -1,40 +1,24 @@
 package com.iesemilidarder.dbonnin.projecto01;
 
-import com.iesemilidarder.dbonnin.projecto01.Controller.HotelController;
-
-import java.util.ArrayList;
-
 public class HotelBooking extends Product {
+    private String country;
+    private String name;
+    private Integer number;
+    private Integer floor;
+    private Double price;
 
-    public static void main(String... args) {
-        System.out.println("Funciona!");
+    public String getCountry() { return country; }
+    public void setCountry(String country) { this.country = country; }
 
-        ArrayList<HotelController> hotelControllerArrayList = new ArrayList<>();
-        HotelController hotelController = new HotelController();
-        hotelController.setCountry("");
-        hotelController.setName("");
-        hotelController.setNumber(1);
-        hotelController.setFloor(1);
-        hotelController.setPrice(1.2);
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
 
-        HotelController hotelController1 = new HotelController();
-        hotelController1.setCountry("");
-        hotelController1.setName("");
-        hotelController1.setNumber(1);
-        hotelController1.setFloor(2);
-        hotelController1.setPrice(1.1);
+    public Integer getNumber() { return number; }
+    public void setNumber(Integer number) { this.number = number; }
 
-        HotelController hotelController2 = new HotelController();
-        hotelController2.setCountry("");
-        hotelController2.setName("");
-        hotelController2.setNumber(1);
-        hotelController2.setFloor(1);
-        hotelController2.setPrice(1.1);
+    public Integer getFloor() { return floor; }
+    public void setFloor(Integer floor) { this.floor = floor; }
 
-        hotelControllerArrayList.add(hotelController);
-        hotelControllerArrayList.add(hotelController);
-        hotelControllerArrayList.add(hotelController);
-
-        System.out.println("Fin!");
-    }
+    public Double getPrice() { return price; }
+    public void setPrice(Double price) { this.price = price; }
 }

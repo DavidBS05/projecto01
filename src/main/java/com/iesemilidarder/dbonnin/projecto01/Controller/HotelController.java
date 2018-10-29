@@ -1,24 +1,43 @@
 package com.iesemilidarder.dbonnin.projecto01.Controller;
 
+import com.iesemilidarder.dbonnin.projecto01.HotelBooking;
+import org.apache.commons.collections4.IteratorUtils;
+
+import java.util.ArrayList;
+
 public class HotelController {
-    private String country;
-    private String name;
-    private Integer number;
-    private Integer floor;
-    private Double price;
 
-    public String getCountry() { return country; }
-    public void setCountry(String country) { this.country = country; }
+    public static void main(String... args) {
+        System.out.println("Funciona!");
 
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
+        ArrayList<HotelBooking> hotels = new ArrayList<>();
 
-    public Integer getNumber() { return number; }
-    public void setNumber(Integer number) { this.number = number; }
+        for (int i=0;i<40;i++) {
+            HotelBooking hotelController = new HotelBooking();
+            hotelController.setCountry("pais"+i);
+            hotelController.setName("name"+i);
+            hotelController.setNumber(1+i);
+            hotelController.setFloor(1+i);
+            hotelController.setPrice(1.2+i);
+            hotels.add(hotelController);
+        }
+        /*
+        for (Iterator<HotelBooking> it = hotels.iterator(); it.hasNext(); ) {
+            HotelBooking i = it.next();
+        }*/
+        for (HotelBooking i:hotels){
 
-    public Integer getFloor() { return floor; }
-    public void setFloor(Integer floor) { this.floor = floor; }
+        }
+        IteratorUtils.forEach(hotels.iterator(), input -> {
+            System.out.println(input.getName());
+            try{
+                //ejecuta insert into places (name,description) values (input.getName(),input.getDescription()
+                //commit
+            }catch (Exception e){
+                //rollback
+            }
 
-    public Double getPrice() { return price; }
-    public void setPrice(Double price) { this.price = price; }
+        });
+        System.out.println("Fin!");
+    }
 }

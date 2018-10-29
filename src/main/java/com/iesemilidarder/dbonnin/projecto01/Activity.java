@@ -4,6 +4,7 @@ public class Activity extends Product {
     private String country;
     private String area;
     private String municipality;
+    private String place;
     private String typeActivity;
     private String name;
     private String duration;
@@ -16,6 +17,9 @@ public class Activity extends Product {
 
     public String getMunicipality() { return municipality; }
     public void setMunicipality(String municipality) { this.municipality = municipality; }
+
+    public String getPlace() { return place; }
+    public void setPlace(String place) { this.place = place; }
 
     public String getTypeActivity() { return typeActivity; }
     public void setTypeActivity(String typeActivity) { this.typeActivity = typeActivity; }

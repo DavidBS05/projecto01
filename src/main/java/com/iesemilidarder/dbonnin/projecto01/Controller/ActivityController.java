@@ -17,6 +17,7 @@ public class ActivityController {
             activityController.setCountry("pais"+i);
             activityController.setArea("area"+i);
             activityController.setMunicipality("municipio"+i);
+            activityController.setPlace("sitio"+i);
             activityController.setTypeActivity("tipo actividad"+i);
             activityController.setName("nombre"+i);
             activityController.setDuration("duracion"+i);

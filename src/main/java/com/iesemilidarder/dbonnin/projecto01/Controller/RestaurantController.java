@@ -4,12 +4,13 @@ import com.iesemilidarder.dbonnin.projecto01.RestaurantBooking;
 import org.apache.commons.collections4.IteratorUtils;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class RestaurantController {
     public static void main(String... args) {
         System.out.println("Funciona");
 
-        ArrayList<RestaurantBooking> restaurants = new ArrayList<>();
+        List<RestaurantBooking> restaurants = new ArrayList<>();
 
         for (int i=0;i<40;i++) {
             RestaurantBooking restaurantController = new RestaurantBooking();

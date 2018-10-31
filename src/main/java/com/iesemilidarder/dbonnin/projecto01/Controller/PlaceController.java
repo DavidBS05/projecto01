@@ -6,13 +6,14 @@ import org.springframework.util.CollectionUtils;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class PlaceController {
 
     public static void main(String... args) {
         System.out.println("Funciona!!!");
 
-        ArrayList<Place> places = new ArrayList<>();
+        List<Place> places = new ArrayList<>();
 
         for(int i=0;i<40;i++){
             Place placeController = new Place();

@@ -4,13 +4,14 @@ import com.iesemilidarder.dbonnin.projecto01.Activity;
 import org.apache.commons.collections4.IteratorUtils;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ActivityController {
 
     public static void main(String... args) {
         System.out.println("Ha moverse vagos!!");
 
-        ArrayList<Activity> activities = new ArrayList<>();
+        List<Activity> activities = new ArrayList<>();
 
         for (int i=0;i<40;i++) {
             Activity activityController = new Activity();

@@ -4,13 +4,14 @@ import com.iesemilidarder.dbonnin.projecto01.HotelBooking;
 import org.apache.commons.collections4.IteratorUtils;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class HotelController {
 
     public static void main(String... args) {
         System.out.println("Funciona!");
 
-        ArrayList<HotelBooking> hotels = new ArrayList<>();
+        List<HotelBooking> hotels = new ArrayList<>();
 
         for (int i=0;i<40;i++) {
             HotelBooking hotelController = new HotelBooking();

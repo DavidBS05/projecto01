@@ -4,6 +4,7 @@ import com.iesemilidarder.dbonnin.projecto01.data.*;
 import org.apache.commons.collections4.IteratorUtils;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class DataHelper {
@@ -37,11 +38,17 @@ public class DataHelper {
                 restaurantBooking.setCountry("pais"+i);
                 items.add(restaurantBooking);
             }
+
+            /*
+            for (Iterator<Product> it = items.iterator(); it.hasNext(); ) {
+                Product i = it.next();
+             */
+
             for (Product i:items){
 
             }
             IteratorUtils.forEach(items.iterator(), input -> {
-                System.out.println(input.getActivityKind());
+                System.out.println(input.getCompany());
                 try{
                     //ejecuta insert into places (name,description) values (input.getName(),input.getDescription()
                     //commit

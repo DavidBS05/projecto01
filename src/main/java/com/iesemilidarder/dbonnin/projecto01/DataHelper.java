@@ -1,10 +1,8 @@
 package com.iesemilidarder.dbonnin.projecto01;
 
 import com.iesemilidarder.dbonnin.projecto01.data.*;
-import org.apache.commons.collections4.IteratorUtils;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class DataHelper {
@@ -38,7 +36,7 @@ public class DataHelper {
                 restaurantBooking.setCountry("pais"+i);
                 items.add(restaurantBooking);
 
-                System.out.print(i);
+                doInit();
             }
         }
     }

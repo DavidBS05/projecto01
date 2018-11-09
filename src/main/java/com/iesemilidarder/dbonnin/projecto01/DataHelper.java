@@ -37,26 +37,9 @@ public class DataHelper {
                 RestaurantBooking restaurantBooking = new RestaurantBooking();
                 restaurantBooking.setCountry("pais"+i);
                 items.add(restaurantBooking);
+
+                System.out.print(i);
             }
-
-            /*
-            for (Iterator<Product> it = items.iterator(); it.hasNext(); ) {
-                Product i = it.next();
-             */
-
-            for (Product i:items){
-
-            }
-            IteratorUtils.forEach(items.iterator(), input -> {
-                System.out.println(input.getCompany());
-                try{
-                    //ejecuta insert into places (name,description) values (input.getName(),input.getDescription()
-                    //commit
-                }catch (Exception e){
-                    //rollback
-                }
-            });
-            System.out.println("Proxima parada!");
         }
     }
 }

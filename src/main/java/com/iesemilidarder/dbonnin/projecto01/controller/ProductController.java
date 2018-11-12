@@ -35,17 +35,10 @@ public class ProductController {
     public List<String> getProduct() {
         List<String> data = new ArrayList<>();
         for (Product p: DataHelper.getData()) {
-            //boolean isFound =
             if(!CollectionUtils.contains(data.iterator(),p.getActivityKind())){
                 data.add(p.getActivityKind());
             }
         }
-        return data;
-    }
-
-    @RequestMapping("/addProduct")
-    public List<String> addProduct() {
-        List<String> data = new ArrayList<>();
         return data;
     }
 

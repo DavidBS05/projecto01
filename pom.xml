@@ -45,6 +45,7 @@
             <artifactId>json-path</artifactId>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
 
@@ -70,5 +71,4 @@
             <url>https://repo.spring.io/libs-release</url>
         </pluginRepository>
     </pluginRepositories>
-
 </project>

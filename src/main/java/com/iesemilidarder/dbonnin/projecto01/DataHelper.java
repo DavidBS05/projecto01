@@ -22,6 +22,8 @@ public class DataHelper {
             for (int i =0;i<40;i++) {
                 Activity activity = new Activity();
                 activity.setCountry("pais"+i);
+                activity.setArea("area"+i);
+                activity.setMunicipality("municipio"+i);
                 items.add(activity);
 
                 HotelBooking hotelBooking = new HotelBooking();

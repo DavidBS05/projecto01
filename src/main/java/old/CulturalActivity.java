@@ -1,4 +1,4 @@
-package com.iesemilidarder.dbonnin.projecto01.old;
+package old;
 
 import com.iesemilidarder.dbonnin.projecto01.data.Activity;
 import org.apache.commons.collections4.IteratorUtils;

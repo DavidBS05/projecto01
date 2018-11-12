@@ -5,6 +5,10 @@ public abstract class Product {
     private String company;
     private String activityKind;
 
+    private String getProduct() {
+        return null;
+    }
+
     public String getGeographicalPoint() { return geographicalPoint; }
     public void setGeographicalPoint(String geographicalPoint) {
         this.geographicalPoint = geographicalPoint;

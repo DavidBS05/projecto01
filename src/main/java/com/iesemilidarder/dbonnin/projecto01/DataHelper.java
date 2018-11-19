@@ -4,6 +4,7 @@ import com.iesemilidarder.dbonnin.projecto01.data.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public class DataHelper {
     public static List<Product> items = new ArrayList<>();
@@ -11,6 +12,14 @@ public class DataHelper {
     public static List<Product> getData () {
         doInit();
         return items;
+    }
+
+    public static Product getItemById(UUID id) {
+        return null;
+    }
+
+    public static void addItem(Product aux){
+        return;
     }
 
     public static void insert (Product product) {

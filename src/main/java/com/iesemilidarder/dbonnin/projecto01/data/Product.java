@@ -1,13 +1,17 @@
 package com.iesemilidarder.dbonnin.projecto01.data;
 
+import java.util.UUID;
+
 public abstract class Product {
+    private UUID id = UUID.randomUUID();
     private String geographicalPoint;
     private String company;
     private String activityKind;
 
-    private String getProduct() {
-        return null;
-    }
+    public UUID getId() { return id; }
+    public void setId(UUID id) { this.id = id; }
+
+    private String getProduct() { return null; }
 
     public String getGeographicalPoint() { return geographicalPoint; }
     public void setGeographicalPoint(String geographicalPoint) {
